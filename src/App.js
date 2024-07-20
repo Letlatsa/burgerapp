@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import './components/Bread.tsx';
+import Bread from './components/Bread.tsx';
+import Fillers from './components/Fillers.tsx';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <Bread  BreadColor='goldenrod' BreadType='Top Bread'/>
+        <Fillers FillerColor='brown' FillerType='Meat'/>
+        <Fillers FillerColor='green' FillerType='Lettuce'/>
+        <Fillers FillerColor='red' FillerType='Tomato'/>
+        <Bread BreadColor='goldenrod' BreadType='Base Bread' />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
     </div>
   );
 }
