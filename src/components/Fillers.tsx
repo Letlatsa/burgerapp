@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 interface Props {
 FillerType:string;
 FillerColor:string;
@@ -7,7 +8,7 @@ FillerColor:string;
 
 const Fillers :React.FC<Props> = ({FillerColor , FillerType})=> {
 
-    return(<div style={{color :FillerColor }}>{FillerType}</div>);
+    return(<div style={{backgroundColor :FillerColor }}>{FillerType}</div>);
 };
 
 export default Fillers;

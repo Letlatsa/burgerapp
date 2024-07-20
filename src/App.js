@@ -1,6 +1,5 @@
 
 import './App.css';
-import './components/Bread.tsx';
 import Bread from './components/Bread.tsx';
 import Fillers from './components/Fillers.tsx';
 
