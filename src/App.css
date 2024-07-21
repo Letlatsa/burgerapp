@@ -39,6 +39,18 @@
 .Fillers.Tomato {
   background-color: red;
 }
+div {
+  margin: 10px 0;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px;
+  font-size: 1em;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
