@@ -9,8 +9,7 @@ interface BreadProps {
 const Bread: React.FC<BreadProps> = ({ BreadColor, BreadType }) => {
   return (
     <div className="Bread" style={{ backgroundColor: BreadColor }}>
-      {BreadType}
-    </div>
+      </div>
   );
 };
 

@@ -7,6 +7,7 @@ const fillerOptions = [
   { type: 'Meat', color: 'brown' },
   { type: 'Lettuce', color: 'green' },
   { type: 'Tomato', color: 'red' },
+  { type: 'Cheese', color: 'gold'}
 ];
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>ACA Burger</h1>
       <Bread BreadColor="goldenrod" BreadType="Top Bread" />
       {fillers.map((filler, index) => (
         <Fillers key={index} FillerColor={filler.color} FillerType={filler.type} />
@@ -42,6 +44,8 @@ function App() {
       <Bread BreadColor="goldenrod" BreadType="Base Bread" />
 
       <div>
+        <br/>
+        <br/>
         <label>Add Filler: </label>
         <select onChange={handleAddFiller} defaultValue="">
           <option value="" disabled>Select a filler</option>
